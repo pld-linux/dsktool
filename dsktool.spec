@@ -1,5 +1,5 @@
 Summary:	Diskette tools - GUI front-end to LibDsk
-Summary(pl):	Narzêdzia do dyskietek - graficzny interfejs do LibDsk
+Summary(pl.UTF-8):   NarzÄ™dzia do dyskietek - graficzny interfejs do LibDsk
 Name:		dsktool
 Version:	1.0.1
 Release:	1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Diskette Tools program is a GUI front-end to LibDsk. It doesn't do
 any more than the provided sample utilities, but it looks nicer.
 
-%description -l pl
-Program Diskette Tools to graficzny interfejs u¿ytkownika do LibDsk.
-Nie robi wiêcej ni¿ za³±czone programy przyk³adowe, ale wygl±da
+%description -l pl.UTF-8
+Program Diskette Tools to graficzny interfejs uÅ¼ytkownika do LibDsk.
+Nie robi wiÄ™cej niÅ¼ zaÅ‚Ä…czone programy przykÅ‚adowe, ale wyglÄ…da
 przyjemniej.
 
 %prep
