@@ -1,5 +1,5 @@
 Summary:	Diskette tools - GUI front-end to LibDsk
-Summary(pl.UTF-8):   Narzędzia do dyskietek - graficzny interfejs do LibDsk
+Summary(pl.UTF-8):	Narzędzia do dyskietek - graficzny interfejs do LibDsk
 Name:		dsktool
 Version:	1.0.1
 Release:	1
