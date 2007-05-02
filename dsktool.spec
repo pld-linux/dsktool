@@ -1,12 +1,13 @@
 Summary:	Diskette tools - GUI front-end to LibDsk
 Summary(pl.UTF-8):	Narzędzia do dyskietek - graficzny interfejs do LibDsk
 Name:		dsktool
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
-# Source0-md5:	d4468598b5ef1d588ad1797a67b748eb
+# Source0-md5:	6d867e13b75d4a5db0806abb14683b46
+Patch0:		%{name}-wx.patch
 URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/#tools
 BuildRequires:	libdsk-devel
 BuildRequires:	rpmbuild(macros) >= 1.167
@@ -24,6 +25,7 @@ przyjemniej.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
