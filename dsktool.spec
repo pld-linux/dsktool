@@ -2,7 +2,7 @@ Summary:	Diskette tools - GUI front-end to LibDsk
 Summary(pl.UTF-8):	Narzędzia do dyskietek - graficzny interfejs do LibDsk
 Name:		dsktool
 Version:	1.0.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://www.seasip.info/Unix/LibDsk/%{name}-%{version}.tar.gz
@@ -10,7 +10,7 @@ Source0:	http://www.seasip.info/Unix/LibDsk/%{name}-%{version}.tar.gz
 URL:		http://www.seasip.info/Unix/LibDsk/#tools
 BuildRequires:	libdsk-devel
 BuildRequires:	rpmbuild(macros) >= 1.167
-BuildRequires:	wxGTK2-devel >= 2.8
+BuildRequires:	wxGTK3-unicode-devel >= 2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,8 +28,8 @@ przyjemniej.
 %build
 %{__make} \
 	CXX="%{__cxx}" \
-	CXXFLAGS="%{rpmcxxflags} `wx-gtk2-ansi-config --cflags`" \
-	WX_LIBS="`wx-gtk2-ansi-config --libs`"
+	CXXFLAGS="%{rpmcxxflags} `wx-gtk3-unicode-config --cflags`" \
+	WX_LIBS="`wx-gtk3-unicode-config --libs`"
 
 %install
 rm -rf $RPM_BUILD_ROOT
